@@ -83,8 +83,8 @@ async function uploadFiles(input) {
   let bytes = AllInputFilesSize;
   AllInputFilesSize = bytesToMegaBytes(bytes);
   console.log(AllInputFilesSize);
-  if(AllInputFilesSize>100){
-    Swal.fire('عذرا حجم الملفات اكبر من 100 ميجا','','error',)
+  if(AllInputFilesSize>1000){
+    Swal.fire('عذرا حجم الملفات اكبر من 1 جيجا','','error',)
   } else{
 
     Swal.fire({
