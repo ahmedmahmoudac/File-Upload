@@ -175,14 +175,14 @@ document.querySelector(".uploadBtn").addEventListener("click",async ()=>{
 
     if(mainInput.files[0]==undefined){
 
-        Swal.fire('برجاء اختيار الملفات اولا','','error',)
+        Swal.fire('Please Choose File First !- !برجاء اختيار الملفات اولا','','error',)
 
     } else {
         
         // let ArrayOfFilesLinksOld = JSON.parse(localStorage.getItem("ArrayOfFilesLinks") || "[]");
         await uploadFiles(mainInput).then(ArrayOfFilesLinks=>{
 
-          Swal.fire('تم رفع جميع الملفات','','success');
+          Swal.fire(' تم رفع جميع الملفات او حجم الملف أكبر من 1 جيجا !','','success');
 
         });
         
