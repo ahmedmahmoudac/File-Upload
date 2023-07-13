@@ -182,7 +182,7 @@ document.querySelector(".uploadBtn").addEventListener("click",async ()=>{
         // let ArrayOfFilesLinksOld = JSON.parse(localStorage.getItem("ArrayOfFilesLinks") || "[]");
         await uploadFiles(mainInput).then(ArrayOfFilesLinks=>{
 
-          Swal.fire(' تم رفع جميع الملفات او حجم الملف أكبر من 1 جيجا !','','success');
+          Swal.fire('  All Files Uploaded - Or File More than 1 GB- تم رفع جميع الملفات او حجم الملف أكبر من 1 جيجا !','','success');
 
         });
         
