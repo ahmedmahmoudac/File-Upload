@@ -56,7 +56,7 @@ document.querySelector(".btn-sign-in").addEventListener("click",async()=>{
                 /**/
                 localStorage.setItem("file-upload-person-id",doc.data().id);
                 /**/
-                location.href="../index.html";
+                location.href="../";
             } else {
                 Swal.fire("","Usename Or Password Are Wrong","error");
             }
