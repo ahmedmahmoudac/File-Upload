@@ -56,7 +56,7 @@ document.querySelector(".btn-sign-in").addEventListener("click",async()=>{
                 /**/
                 localStorage.setItem("file-upload-person-id",doc.data().id);
                 /**/
-                location.href="../";
+                location.href="../index.html";
             } else {
                 Swal.fire("","Usename Or Password Are Wrong","error");
             }
@@ -79,6 +79,8 @@ document.querySelector(".btn-sign-in").addEventListener("click",async()=>{
 
 
 
+/* start create account */
+
 * start create account */
 
 document.querySelector(".btn-sign-up").addEventListener("click", () => {
@@ -88,78 +90,6 @@ document.querySelector(".btn-sign-up").addEventListener("click", () => {
         'warning'
     );
 });
-
-
-
-
-
-
-
-
-
-// document.querySelector(".btn-sign-up").addEventListener("click",async()=>{
-//    let username = document.querySelector(".username-up").value
- //   let password = document.querySelector(".password-up").value
- //   let password2 = document.querySelector(".password-up-2").value
-  //  let name = username
-
-
- //   if(username!=""&&password!=""&&password2!=""&&password==password2)
-   // {
-
-    //    Swal.fire({
-    //        title: 'Please Wait!',
-    //        didOpen: () => {Swal.showLoading()}
-    //    });
-
-  //    function idGenerator() {
-  //      var S4 = function() {
-  //          return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
- //       };
- //       return (S4()+S4()+"-"+S4()+"-"+S4()+"-"+S4()+"-"+S4()+S4()+S4());
- //     };
-
- //     let id = idGenerator();
-
-  //    let q = query(collection(db, "accounts"), where("username", "==", `${username}`));
-
-   //   const querySnapshot = await getDocs(q);
-//      if(querySnapshot.docs.length==0){
-   //     setDoc(doc(db,"accounts",id),{
-    //        id: id,
-     //       name: name,
-    //        username: username,
-    //        password: password,
-     //       date: Date.now(),
-   //     }).then(e=>{
-    //        Swal.fire(
-    //        'تم انشاء الحساب',
-     //       'يمكنك الان تسجيل الدخول',
-     //       'success'
-      //    )
-     //   });
-      
-    //    document.querySelector(".username-up").value=""
-    //    document.querySelector(".password-up").value=""
-    //    document.querySelector(".password-up-2").value=""
-    
-     //   document.querySelector("#tab-1").click()
- //     } else {
-  //      Swal.fire(
-   //         'الاسم موجود بالفعل',
-   //         'برجاء اختيار اسم اخر',
-   //         'error'
-   //     )
-    //  }
-
-      
-
-//    } else if(username!=""&&password!=password2) {
-  //      Swal.fire("","The Two Password Should be the Same","error")
-  //  } else {
-  //      Swal.fire("","Enter Username,Password","error")
-  //  }
-// })
 
 /* end create account */
 
