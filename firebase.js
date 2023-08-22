@@ -1,10 +1,10 @@
 export const firebaseConfig = {
-  apiKey: "AIzaSyCDbJ4m6YmJxblhdmj9ISwXjznx9BVYsKo",
-  authDomain: "new-upload-medoz2.firebaseapp.com",
-  projectId: "new-upload-medoz2",
-  storageBucket: "new-upload-medoz2.appspot.com",
-  messagingSenderId: "548565254667",
-  appId: "1:548565254667:web:9f4432b4ad2a98a56d3d0e",
+    apiKey: "AIzaSyA5Oygn4KCqdTHuryzqD4DHUdXCjj8wFfM",
+    authDomain: "file-upload-by-medoz-pro.firebaseapp.com",
+    projectId: "file-upload-by-medoz-pro",
+    storageBucket: "file-upload-by-medoz-pro.appspot.com",
+    messagingSenderId: "575667669315",
+    appId: "1:575667669315:web:b5ce5f7e7b607280dd87f6",
 
   };
 
