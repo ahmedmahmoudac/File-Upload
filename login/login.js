@@ -79,79 +79,20 @@ document.querySelector(".btn-sign-in").addEventListener("click",async()=>{
 
 
 
-/* start create account */
+* start create account */
 
-//document.querySelector(".btn-sign-up").addEventListener("click", () => {
-  //  Swal.fire(
-    //    'Account Creation Disabled 😥',
-      //  'Sorry, account creation is currently disabled for New Users, if you already has an account you can sign in with it. 😥',
-        //'warning'
-    //);
-//});
-
-
-
-
-
-document.querySelector(".btn-sign-up").addEventListener("click", async () => {
-    let username = document.querySelector(".username-up").value;
-    let password = document.querySelector(".password-up").value;
-    let password2 = document.querySelector(".password-up-2").value;
-    let name = username;
-
-    if (username !== "" && password !== "" && password === password2) {
-        Swal.fire({
-            title: 'Please Wait!',
-            didOpen: () => {
-                Swal.showLoading();
-            }
-        });
-
-        function idGenerator() {
-            var S4 = function() {
-                return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
-            };
-            return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
-        }
-
-        let id = idGenerator();
-
-        let q = query(collection(db, "accounts"), where("username", "==", `${username}`));
-
-        const querySnapshot = await getDocs(q);
-        if (querySnapshot.docs.length == 0) {
-            setDoc(doc(db, "accounts", id), {
-                id: id,
-                name: name,
-                username: username,
-                password: password,
-                date: Date.now(),
-            }).then(e => {
-                Swal.fire(
-                    'Account Created',
-                    'You can now log in',
-                    'success'
-                );
-            });
-
-            document.querySelector(".username-up").value = "";
-            document.querySelector(".password-up").value = "";
-            document.querySelector(".password-up-2").value = "";
-
-            document.querySelector("#tab-1").click();
-        } else {
-            Swal.fire(
-                'Username Already Exists',
-                'Please choose another username',
-                'error'
-            );
-        }
-    } else if (username !== "" && password !== password2) {
-        Swal.fire("", "The Two Passwords Should Match", "error");
-    } else {
-        Swal.fire("", "Enter Username and Password", "error");
-    }
+document.querySelector(".btn-sign-up").addEventListener("click", () => {
+   Swal.fire(
+      'Account Creation Disabled 😥',
+       'Sorry, account creation is currently disabled for New Users, if you already has an account you can sign in with it. 😥',
+        'warning'
+    );
 });
+
+
+
+
+
 
 
 
